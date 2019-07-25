@@ -14,7 +14,62 @@
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
 	<body>
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title></title>
+
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{% static '/vendors/bootstrap/css/bootstrap.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}" />
+
+		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+	
+     <style>
+       html, body {
+         background-color: #864D9A;
+       }
+       
+      .container {
+        padding:40px;
+        height: 400px;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        
+        
+      }
+      
+      .box {
+        height:80px;
+        width: 120px;
+        margin: 10px;
+        background-color: #E78024;
+      }
+    </style>
+    
+	</head>
+	<body>
 		<!-- Your layout here -->
+    <div class="container">
+      <div class="box"> </div>
+      <div class="box"> </div>
+      <div class="box"> </div>
+      <div class="box"> </div>
+      <div class="box"> </div>
+      <div class="box"> </div>
+      <div class="box"> </div>
+     
+     
+    </div>
+	</body>
+</html>
 
 	</body>
 </html>
